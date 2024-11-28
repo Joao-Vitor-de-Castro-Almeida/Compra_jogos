@@ -33,7 +33,7 @@ public class DiretorService {
 
     public Diretor findByCPF(String CPF) {
         Optional<Diretor> obj = diretorRepo.findByCPF(CPF);
-        return obj.orElseThrow(() -> new ObjectNotFoundException("Diretor não encontrada! cnpj:" + CPF));
+        return obj.orElseThrow(() -> new ObjectNotFoundException("Diretor não encontrada! CPF:" + CPF));
     }
 
     public Diretor create(DiretorDTO dto){
