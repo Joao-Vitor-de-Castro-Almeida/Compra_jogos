@@ -50,7 +50,7 @@ public class VendedorResouce {
         return ResponseEntity.created(uri).build();
     }
 
-    @PostMapping(value = "/{id}")
+    @PutMapping(value = "/{id}")
     public ResponseEntity<VendedorDTO> update(@PathVariable Long id, @Valid @RequestBody VendedorDTO objOdto){
         Vendedor Obj = vendedorService.update(id, objOdto);
         return ResponseEntity.ok().body(new VendedorDTO(Obj));

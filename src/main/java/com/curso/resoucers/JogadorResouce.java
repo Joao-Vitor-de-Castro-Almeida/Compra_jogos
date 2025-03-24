@@ -50,7 +50,7 @@ public class JogadorResouce {
         return ResponseEntity.created(uri).build();
     }
 
-    @PostMapping(value = "/{id}")
+    @PutMapping(value = "/{id}")
     public ResponseEntity<JogadorDTO> update(@PathVariable Long id, @Valid @RequestBody JogadorDTO objOdto){
         Jogador Obj = jogadorService.update(id, objOdto);
         return ResponseEntity.ok().body(new JogadorDTO(Obj));

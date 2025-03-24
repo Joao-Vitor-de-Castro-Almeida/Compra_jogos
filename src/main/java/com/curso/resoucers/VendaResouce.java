@@ -38,7 +38,7 @@ public class VendaResouce {
         return ResponseEntity.created(uri).build();
     }
 
-    @PutMapping(value = "{id}")
+    @PutMapping(value = "/{id}")
     public ResponseEntity<VendaDTO> update(@PathVariable UUID id,@Valid @RequestBody VendaDTO objDto){
         Venda Obj = vendaService.update(id, objDto);
         return ResponseEntity.ok().body(new VendaDTO(Obj));
