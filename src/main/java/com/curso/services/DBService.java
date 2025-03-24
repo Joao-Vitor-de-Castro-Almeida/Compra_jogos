@@ -1,13 +1,11 @@
 package com.curso.services;
 
-import com.curso.domains.Diretor;
-import com.curso.domains.Jogo;
-import com.curso.domains.Publicadora;
+import com.curso.domains.*;
 import com.curso.domains.enums.Completude;
+import com.curso.domains.enums.Edicao;
+import com.curso.domains.enums.FormaPagameno;
 import com.curso.domains.enums.Status;
-import com.curso.repositories.DiretorRepository;
-import com.curso.repositories.JogoRepository;
-import com.curso.repositories.PublicadoraRepository;
+import com.curso.repositories.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -25,6 +23,15 @@ public class DBService {
 
     @Autowired
     private JogoRepository jogoRepo;
+
+    @Autowired
+    private JogadorRepository jogadorRepo;
+
+    @Autowired
+    private VendedorRepository vendedorRepo;
+
+    @Autowired
+    private VendaRepository vendaRepo;
 
     public void initDB() {
 
@@ -52,6 +59,21 @@ public class DBService {
         jogoRepo.save(jogo01);
         jogoRepo.save(jogo02);
         jogoRepo.save(jogo03);
+
+        Jogador jogador01 = new Jogador(null,"jonas","Matheus","44457-20","jonasMA@email.com","melo85");
+        Jogador jogador02 = new Jogador(null,"Tucas","Homes","85226-45","homes@Gmail.com","lelo85");
+
+        jogadorRepo.save(jogador01);
+        jogadorRepo.save(jogador02);
+
+        Vendedor vendedor01 = new Vendedor(null,"Felipe Gomes","Santos","56842-80","negociante@Gmail.com","fulu40");
+
+        vendedorRepo.save(vendedor01);
+
+        Venda venda01 = new Venda(null,"The dragons","luta em terceira pessoa", Edicao.JOGADOR, FormaPagameno.DEBITO,
+                vendedor01,jogador01);
+
+        vendaRepo.save(venda01);
 
     }
 }

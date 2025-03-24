@@ -1,0 +1,440 @@
+2025-03-23T22:10:59.870-03:00  INFO 8160 --- [Compra_jogos] [restartedMain] c.c.Compra_jogos.CompraJogosApplication  : Starting CompraJogosApplication using Java 21.0.2 with PID 8160 (C:\Users\João\OneDrive\Documentos\Projeto Visuais\Compra_jogos\target\classes started by João in C:\Users\João\OneDrive\Documentos\Projeto Visuais\Compra_jogos)
+2025-03-23T22:10:59.872-03:00  INFO 8160 --- [Compra_jogos] [restartedMain] c.c.Compra_jogos.CompraJogosApplication  : The following 1 profile is active: "test"
+2025-03-23T22:10:59.946-03:00  INFO 8160 --- [Compra_jogos] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-03-23T22:10:59.950-03:00  INFO 8160 --- [Compra_jogos] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-03-23T22:11:00.646-03:00  INFO 8160 --- [Compra_jogos] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-03-23T22:11:00.713-03:00  INFO 8160 --- [Compra_jogos] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 59 ms. Found 7 JPA repository interfaces.
+2025-03-23T22:11:01.801-03:00  INFO 8160 --- [Compra_jogos] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-03-23T22:11:01.821-03:00  INFO 8160 --- [Compra_jogos] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-03-23T22:11:01.822-03:00  INFO 8160 --- [Compra_jogos] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.31]
+2025-03-23T22:11:01.883-03:00  INFO 8160 --- [Compra_jogos] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-03-23T22:11:01.883-03:00  INFO 8160 --- [Compra_jogos] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1933 ms
+2025-03-23T22:11:01.922-03:00  INFO 8160 --- [Compra_jogos] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-03-23T22:11:02.160-03:00  INFO 8160 --- [Compra_jogos] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:Compra_jogosdb user=SA
+2025-03-23T22:11:02.163-03:00  INFO 8160 --- [Compra_jogos] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-03-23T22:11:02.178-03:00  INFO 8160 --- [Compra_jogos] [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:Compra_jogosdb'
+2025-03-23T22:11:02.360-03:00  INFO 8160 --- [Compra_jogos] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-03-23T22:11:02.470-03:00  INFO 8160 --- [Compra_jogos] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.3.Final
+2025-03-23T22:11:02.535-03:00  INFO 8160 --- [Compra_jogos] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-03-23T22:11:02.631-03:00 DEBUG 8160 --- [Compra_jogos] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration boolean -> org.hibernate.type.BasicTypeReference@40b3e1d4
+2025-03-23T22:11:02.631-03:00 DEBUG 8160 --- [Compra_jogos] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration boolean -> org.hibernate.type.BasicTypeReference@40b3e1d4
+2025-03-23T22:11:02.631-03:00 DEBUG 8160 --- [Compra_jogos] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Boolean -> org.hibernate.type.BasicTypeReference@40b3e1d4
+2025-03-23T22:11:02.632-03:00 DEBUG 8160 --- [Compra_jogos] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration numeric_boolean -> org.hibernate.type.BasicTypeReference@372dc970
+2025-03-23T22:11:02.632-03:00 DEBUG 8160 --- [Compra_jogos] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration org.hibernate.type.NumericBooleanConverter -> org.hibernate.type.BasicTypeReference@372dc970
+2025-03-23T22:11:02.632-03:00 DEBUG 8160 --- [Compra_jogos] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration true_false -> org.hibernate.type.BasicTypeReference@41d17ee6
+2025-03-23T22:11:02.632-03:00 DEBUG 8160 --- [Compra_jogos] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration org.hibernate.type.TrueFalseConverter -> org.hibernate.type.BasicTypeReference@41d17ee6
+2025-03-23T22:11:02.632-03:00 DEBUG 8160 --- [Compra_jogos] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration yes_no -> org.hibernate.type.BasicTypeReference@13341033
+2025-03-23T22:11:02.632-03:00 DEBUG 8160 --- [Compra_jogos] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration org.hibernate.type.YesNoConverter -> org.hibernate.type.BasicTypeReference@13341033
+2025-03-23T22:11:02.632-03:00 DEBUG 8160 --- [Compra_jogos] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration byte -> org.hibernate.type.BasicTypeReference@4cd6fec0
+2025-03-23T22:11:02.632-03:00 DEBUG 8160 --- [Compra_jogos] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration byte -> org.hibernate.type.BasicTypeReference@4cd6fec0
+2025-03-23T22:11:02.633-03:00 DEBUG 8160 --- [Compra_jogos] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Byte -> org.hibernate.type.BasicTypeReference@4cd6fec0
+2025-03-23T22:11:02.633-03:00 DEBUG 8160 --- [Compra_jogos] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration binary -> org.hibernate.type.BasicTypeReference@15e9c863
+2025-03-23T22:11:02.633-03:00 DEBUG 8160 --- [Compra_jogos] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration byte[] -> org.hibernate.type.BasicTypeReference@15e9c863
+2025-03-23T22:11:02.633-03:00 DEBUG 8160 --- [Compra_jogos] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration [B -> org.hibernate.type.BasicTypeReference@15e9c863
+2025-03-23T22:11:02.633-03:00 DEBUG 8160 --- [Compra_jogos] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration binary_wrapper -> org.hibernate.type.BasicTypeReference@5f05b276
+2025-03-23T22:11:02.633-03:00 DEBUG 8160 --- [Compra_jogos] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration wrapper-binary -> org.hibernate.type.BasicTypeReference@5f05b276
+2025-03-23T22:11:02.633-03:00 DEBUG 8160 --- [Compra_jogos] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration image -> org.hibernate.type.BasicTypeReference@6c83842d
+2025-03-23T22:11:02.633-03:00 DEBUG 8160 --- [Compra_jogos] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration blob -> org.hibernate.type.BasicTypeReference@17d85783
+2025-03-23T22:11:02.633-03:00 DEBUG 8160 --- [Compra_jogos] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.Blob -> org.hibernate.type.BasicTypeReference@17d85783
+2025-03-23T22:11:02.634-03:00 DEBUG 8160 --- [Compra_jogos] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration materialized_blob -> org.hibernate.type.BasicTypeReference@4ca92fcb
+2025-03-23T22:11:02.634-03:00 DEBUG 8160 --- [Compra_jogos] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration materialized_blob_wrapper -> org.hibernate.type.BasicTypeReference@3e4da22a
+2025-03-23T22:11:02.634-03:00 DEBUG 8160 --- [Compra_jogos] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration short -> org.hibernate.type.BasicTypeReference@4e9ffb22
+2025-03-23T22:11:02.634-03:00 DEBUG 8160 --- [Compra_jogos] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration short -> org.hibernate.type.BasicTypeReference@4e9ffb22
+2025-03-23T22:11:02.634-03:00 DEBUG 8160 --- [Compra_jogos] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Short -> org.hibernate.type.BasicTypeReference@4e9ffb22
+2025-03-23T22:11:02.634-03:00 DEBUG 8160 --- [Compra_jogos] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration integer -> org.hibernate.type.BasicTypeReference@1b2ec93d
+2025-03-23T22:11:02.634-03:00 DEBUG 8160 --- [Compra_jogos] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration int -> org.hibernate.type.BasicTypeReference@1b2ec93d
+2025-03-23T22:11:02.634-03:00 DEBUG 8160 --- [Compra_jogos] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Integer -> org.hibernate.type.BasicTypeReference@1b2ec93d
+2025-03-23T22:11:02.634-03:00 DEBUG 8160 --- [Compra_jogos] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration long -> org.hibernate.type.BasicTypeReference@1e7c6ae4
+2025-03-23T22:11:02.635-03:00 DEBUG 8160 --- [Compra_jogos] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration long -> org.hibernate.type.BasicTypeReference@1e7c6ae4
+2025-03-23T22:11:02.635-03:00 DEBUG 8160 --- [Compra_jogos] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Long -> org.hibernate.type.BasicTypeReference@1e7c6ae4
+2025-03-23T22:11:02.635-03:00 DEBUG 8160 --- [Compra_jogos] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration float -> org.hibernate.type.BasicTypeReference@4df3d7f3
+2025-03-23T22:11:02.635-03:00 DEBUG 8160 --- [Compra_jogos] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration float -> org.hibernate.type.BasicTypeReference@4df3d7f3
+2025-03-23T22:11:02.635-03:00 DEBUG 8160 --- [Compra_jogos] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Float -> org.hibernate.type.BasicTypeReference@4df3d7f3
+2025-03-23T22:11:02.635-03:00 DEBUG 8160 --- [Compra_jogos] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration double -> org.hibernate.type.BasicTypeReference@7c847384
+2025-03-23T22:11:02.635-03:00 DEBUG 8160 --- [Compra_jogos] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration double -> org.hibernate.type.BasicTypeReference@7c847384
+2025-03-23T22:11:02.635-03:00 DEBUG 8160 --- [Compra_jogos] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Double -> org.hibernate.type.BasicTypeReference@7c847384
+2025-03-23T22:11:02.635-03:00 DEBUG 8160 --- [Compra_jogos] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration big_integer -> org.hibernate.type.BasicTypeReference@118e3a08
+2025-03-23T22:11:02.636-03:00 DEBUG 8160 --- [Compra_jogos] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.math.BigInteger -> org.hibernate.type.BasicTypeReference@118e3a08
+2025-03-23T22:11:02.636-03:00 DEBUG 8160 --- [Compra_jogos] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration big_decimal -> org.hibernate.type.BasicTypeReference@6cd85997
+2025-03-23T22:11:02.636-03:00 DEBUG 8160 --- [Compra_jogos] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.math.BigDecimal -> org.hibernate.type.BasicTypeReference@6cd85997
+2025-03-23T22:11:02.636-03:00 DEBUG 8160 --- [Compra_jogos] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration character -> org.hibernate.type.BasicTypeReference@3f4757b0
+2025-03-23T22:11:02.636-03:00 DEBUG 8160 --- [Compra_jogos] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration char -> org.hibernate.type.BasicTypeReference@3f4757b0
+2025-03-23T22:11:02.636-03:00 DEBUG 8160 --- [Compra_jogos] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Character -> org.hibernate.type.BasicTypeReference@3f4757b0
+2025-03-23T22:11:02.636-03:00 DEBUG 8160 --- [Compra_jogos] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration character_nchar -> org.hibernate.type.BasicTypeReference@60000b8f
+2025-03-23T22:11:02.636-03:00 DEBUG 8160 --- [Compra_jogos] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration string -> org.hibernate.type.BasicTypeReference@3e33fd
+2025-03-23T22:11:02.637-03:00 DEBUG 8160 --- [Compra_jogos] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.String -> org.hibernate.type.BasicTypeReference@3e33fd
+2025-03-23T22:11:02.637-03:00 DEBUG 8160 --- [Compra_jogos] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration nstring -> org.hibernate.type.BasicTypeReference@2e84d68c
+2025-03-23T22:11:02.638-03:00 DEBUG 8160 --- [Compra_jogos] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration characters -> org.hibernate.type.BasicTypeReference@2bfbfe3b
+2025-03-23T22:11:02.638-03:00 DEBUG 8160 --- [Compra_jogos] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration char[] -> org.hibernate.type.BasicTypeReference@2bfbfe3b
+2025-03-23T22:11:02.639-03:00 DEBUG 8160 --- [Compra_jogos] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration [C -> org.hibernate.type.BasicTypeReference@2bfbfe3b
+2025-03-23T22:11:02.639-03:00 DEBUG 8160 --- [Compra_jogos] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration wrapper-characters -> org.hibernate.type.BasicTypeReference@4b47c4b8
+2025-03-23T22:11:02.639-03:00 DEBUG 8160 --- [Compra_jogos] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration text -> org.hibernate.type.BasicTypeReference@3a97b7f6
+2025-03-23T22:11:02.639-03:00 DEBUG 8160 --- [Compra_jogos] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration ntext -> org.hibernate.type.BasicTypeReference@32af369e
+2025-03-23T22:11:02.639-03:00 DEBUG 8160 --- [Compra_jogos] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration clob -> org.hibernate.type.BasicTypeReference@46d11cd6
+2025-03-23T22:11:02.639-03:00 DEBUG 8160 --- [Compra_jogos] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.Clob -> org.hibernate.type.BasicTypeReference@46d11cd6
+2025-03-23T22:11:02.639-03:00 DEBUG 8160 --- [Compra_jogos] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration nclob -> org.hibernate.type.BasicTypeReference@33c672b0
+2025-03-23T22:11:02.640-03:00 DEBUG 8160 --- [Compra_jogos] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.NClob -> org.hibernate.type.BasicTypeReference@33c672b0
+2025-03-23T22:11:02.640-03:00 DEBUG 8160 --- [Compra_jogos] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration materialized_clob -> org.hibernate.type.BasicTypeReference@34695b39
+2025-03-23T22:11:02.640-03:00 DEBUG 8160 --- [Compra_jogos] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration materialized_clob_char_array -> org.hibernate.type.BasicTypeReference@7f3990ec
+2025-03-23T22:11:02.640-03:00 DEBUG 8160 --- [Compra_jogos] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration materialized_clob_character_array -> org.hibernate.type.BasicTypeReference@31c01471
+2025-03-23T22:11:02.640-03:00 DEBUG 8160 --- [Compra_jogos] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration materialized_nclob -> org.hibernate.type.BasicTypeReference@3193b30b
+2025-03-23T22:11:02.640-03:00 DEBUG 8160 --- [Compra_jogos] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration materialized_nclob_character_array -> org.hibernate.type.BasicTypeReference@4fdd9693
+2025-03-23T22:11:02.640-03:00 DEBUG 8160 --- [Compra_jogos] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration materialized_nclob_char_array -> org.hibernate.type.BasicTypeReference@7c50c174
+2025-03-23T22:11:02.640-03:00 DEBUG 8160 --- [Compra_jogos] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration Duration -> org.hibernate.type.BasicTypeReference@4d022113
+2025-03-23T22:11:02.640-03:00 DEBUG 8160 --- [Compra_jogos] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.Duration -> org.hibernate.type.BasicTypeReference@4d022113
+2025-03-23T22:11:02.640-03:00 DEBUG 8160 --- [Compra_jogos] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration LocalDateTime -> org.hibernate.type.BasicTypeReference@61a5d853
+2025-03-23T22:11:02.641-03:00 DEBUG 8160 --- [Compra_jogos] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.LocalDateTime -> org.hibernate.type.BasicTypeReference@61a5d853
+2025-03-23T22:11:02.641-03:00 DEBUG 8160 --- [Compra_jogos] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration LocalDate -> org.hibernate.type.BasicTypeReference@42efb3fa
+2025-03-23T22:11:02.641-03:00 DEBUG 8160 --- [Compra_jogos] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.LocalDate -> org.hibernate.type.BasicTypeReference@42efb3fa
+2025-03-23T22:11:02.641-03:00 DEBUG 8160 --- [Compra_jogos] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration LocalTime -> org.hibernate.type.BasicTypeReference@38ce81b2
+2025-03-23T22:11:02.641-03:00 DEBUG 8160 --- [Compra_jogos] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.LocalTime -> org.hibernate.type.BasicTypeReference@38ce81b2
+2025-03-23T22:11:02.641-03:00 DEBUG 8160 --- [Compra_jogos] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration OffsetDateTime -> org.hibernate.type.BasicTypeReference@64183501
+2025-03-23T22:11:02.641-03:00 DEBUG 8160 --- [Compra_jogos] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.OffsetDateTime -> org.hibernate.type.BasicTypeReference@64183501
+2025-03-23T22:11:02.642-03:00 DEBUG 8160 --- [Compra_jogos] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration OffsetDateTimeWithTimezone -> org.hibernate.type.BasicTypeReference@2b300e91
+2025-03-23T22:11:02.642-03:00 DEBUG 8160 --- [Compra_jogos] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration OffsetDateTimeWithoutTimezone -> org.hibernate.type.BasicTypeReference@147f086e
+2025-03-23T22:11:02.642-03:00 DEBUG 8160 --- [Compra_jogos] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration OffsetTime -> org.hibernate.type.BasicTypeReference@58f0c842
+2025-03-23T22:11:02.642-03:00 DEBUG 8160 --- [Compra_jogos] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.OffsetTime -> org.hibernate.type.BasicTypeReference@58f0c842
+2025-03-23T22:11:02.642-03:00 DEBUG 8160 --- [Compra_jogos] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration OffsetTimeUtc -> org.hibernate.type.BasicTypeReference@7d655e60
+2025-03-23T22:11:02.642-03:00 DEBUG 8160 --- [Compra_jogos] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration OffsetTimeWithTimezone -> org.hibernate.type.BasicTypeReference@560a83db
+2025-03-23T22:11:02.642-03:00 DEBUG 8160 --- [Compra_jogos] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration OffsetTimeWithoutTimezone -> org.hibernate.type.BasicTypeReference@3a5add0c
+2025-03-23T22:11:02.643-03:00 DEBUG 8160 --- [Compra_jogos] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration ZonedDateTime -> org.hibernate.type.BasicTypeReference@64b6a0dd
+2025-03-23T22:11:02.643-03:00 DEBUG 8160 --- [Compra_jogos] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.ZonedDateTime -> org.hibernate.type.BasicTypeReference@64b6a0dd
+2025-03-23T22:11:02.643-03:00 DEBUG 8160 --- [Compra_jogos] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration ZonedDateTimeWithTimezone -> org.hibernate.type.BasicTypeReference@33f77475
+2025-03-23T22:11:02.643-03:00 DEBUG 8160 --- [Compra_jogos] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration ZonedDateTimeWithoutTimezone -> org.hibernate.type.BasicTypeReference@31613d8b
+2025-03-23T22:11:02.643-03:00 DEBUG 8160 --- [Compra_jogos] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration date -> org.hibernate.type.BasicTypeReference@5dbf2416
+2025-03-23T22:11:02.643-03:00 DEBUG 8160 --- [Compra_jogos] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.Date -> org.hibernate.type.BasicTypeReference@5dbf2416
+2025-03-23T22:11:02.643-03:00 DEBUG 8160 --- [Compra_jogos] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration time -> org.hibernate.type.BasicTypeReference@c5ec734
+2025-03-23T22:11:02.644-03:00 DEBUG 8160 --- [Compra_jogos] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.Time -> org.hibernate.type.BasicTypeReference@c5ec734
+2025-03-23T22:11:02.644-03:00 DEBUG 8160 --- [Compra_jogos] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration timestamp -> org.hibernate.type.BasicTypeReference@4825e16
+2025-03-23T22:11:02.644-03:00 DEBUG 8160 --- [Compra_jogos] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.Timestamp -> org.hibernate.type.BasicTypeReference@4825e16
+2025-03-23T22:11:02.644-03:00 DEBUG 8160 --- [Compra_jogos] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.Date -> org.hibernate.type.BasicTypeReference@4825e16
+2025-03-23T22:11:02.645-03:00 DEBUG 8160 --- [Compra_jogos] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration calendar -> org.hibernate.type.BasicTypeReference@3cb7b668
+2025-03-23T22:11:02.645-03:00 DEBUG 8160 --- [Compra_jogos] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.Calendar -> org.hibernate.type.BasicTypeReference@3cb7b668
+2025-03-23T22:11:02.645-03:00 DEBUG 8160 --- [Compra_jogos] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.GregorianCalendar -> org.hibernate.type.BasicTypeReference@3cb7b668
+2025-03-23T22:11:02.645-03:00 DEBUG 8160 --- [Compra_jogos] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration calendar_date -> org.hibernate.type.BasicTypeReference@180caa7c
+2025-03-23T22:11:02.645-03:00 DEBUG 8160 --- [Compra_jogos] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration calendar_time -> org.hibernate.type.BasicTypeReference@6211b92e
+2025-03-23T22:11:02.645-03:00 DEBUG 8160 --- [Compra_jogos] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration instant -> org.hibernate.type.BasicTypeReference@74753994
+2025-03-23T22:11:02.645-03:00 DEBUG 8160 --- [Compra_jogos] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.Instant -> org.hibernate.type.BasicTypeReference@74753994
+2025-03-23T22:11:02.645-03:00 DEBUG 8160 --- [Compra_jogos] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration uuid -> org.hibernate.type.BasicTypeReference@7570d584
+2025-03-23T22:11:02.646-03:00 DEBUG 8160 --- [Compra_jogos] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.UUID -> org.hibernate.type.BasicTypeReference@7570d584
+2025-03-23T22:11:02.646-03:00 DEBUG 8160 --- [Compra_jogos] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration pg-uuid -> org.hibernate.type.BasicTypeReference@7570d584
+2025-03-23T22:11:02.646-03:00 DEBUG 8160 --- [Compra_jogos] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration uuid-binary -> org.hibernate.type.BasicTypeReference@8d2de1c
+2025-03-23T22:11:02.646-03:00 DEBUG 8160 --- [Compra_jogos] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration uuid-char -> org.hibernate.type.BasicTypeReference@6765cee1
+2025-03-23T22:11:02.646-03:00 DEBUG 8160 --- [Compra_jogos] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration class -> org.hibernate.type.BasicTypeReference@3a81e200
+2025-03-23T22:11:02.646-03:00 DEBUG 8160 --- [Compra_jogos] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Class -> org.hibernate.type.BasicTypeReference@3a81e200
+2025-03-23T22:11:02.647-03:00 DEBUG 8160 --- [Compra_jogos] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration currency -> org.hibernate.type.BasicTypeReference@492ecc21
+2025-03-23T22:11:02.647-03:00 DEBUG 8160 --- [Compra_jogos] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration Currency -> org.hibernate.type.BasicTypeReference@492ecc21
+2025-03-23T22:11:02.648-03:00 DEBUG 8160 --- [Compra_jogos] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.Currency -> org.hibernate.type.BasicTypeReference@492ecc21
+2025-03-23T22:11:02.648-03:00 DEBUG 8160 --- [Compra_jogos] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration locale -> org.hibernate.type.BasicTypeReference@5792d926
+2025-03-23T22:11:02.648-03:00 DEBUG 8160 --- [Compra_jogos] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.Locale -> org.hibernate.type.BasicTypeReference@5792d926
+2025-03-23T22:11:02.648-03:00 DEBUG 8160 --- [Compra_jogos] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration serializable -> org.hibernate.type.BasicTypeReference@1ec917f3
+2025-03-23T22:11:02.648-03:00 DEBUG 8160 --- [Compra_jogos] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.io.Serializable -> org.hibernate.type.BasicTypeReference@1ec917f3
+2025-03-23T22:11:02.648-03:00 DEBUG 8160 --- [Compra_jogos] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration timezone -> org.hibernate.type.BasicTypeReference@2b6d77c8
+2025-03-23T22:11:02.648-03:00 DEBUG 8160 --- [Compra_jogos] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.TimeZone -> org.hibernate.type.BasicTypeReference@2b6d77c8
+2025-03-23T22:11:02.649-03:00 DEBUG 8160 --- [Compra_jogos] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration ZoneOffset -> org.hibernate.type.BasicTypeReference@141de940
+2025-03-23T22:11:02.649-03:00 DEBUG 8160 --- [Compra_jogos] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.ZoneOffset -> org.hibernate.type.BasicTypeReference@141de940
+2025-03-23T22:11:02.649-03:00 DEBUG 8160 --- [Compra_jogos] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration url -> org.hibernate.type.BasicTypeReference@5507490c
+2025-03-23T22:11:02.649-03:00 DEBUG 8160 --- [Compra_jogos] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.net.URL -> org.hibernate.type.BasicTypeReference@5507490c
+2025-03-23T22:11:02.649-03:00 DEBUG 8160 --- [Compra_jogos] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration vector -> org.hibernate.type.BasicTypeReference@3a7aad0
+2025-03-23T22:11:02.649-03:00 DEBUG 8160 --- [Compra_jogos] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration row_version -> org.hibernate.type.BasicTypeReference@43b44e5b
+2025-03-23T22:11:02.657-03:00 DEBUG 8160 --- [Compra_jogos] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration object -> org.hibernate.type.JavaObjectType@349cbcbe
+2025-03-23T22:11:02.658-03:00 DEBUG 8160 --- [Compra_jogos] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Object -> org.hibernate.type.JavaObjectType@349cbcbe
+2025-03-23T22:11:02.660-03:00 DEBUG 8160 --- [Compra_jogos] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration null -> org.hibernate.type.NullType@4714c6a7
+2025-03-23T22:11:02.661-03:00 DEBUG 8160 --- [Compra_jogos] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_date -> org.hibernate.type.BasicTypeReference@4d59ed6d
+2025-03-23T22:11:02.662-03:00 DEBUG 8160 --- [Compra_jogos] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_time -> org.hibernate.type.BasicTypeReference@368a277
+2025-03-23T22:11:02.662-03:00 DEBUG 8160 --- [Compra_jogos] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_timestamp -> org.hibernate.type.BasicTypeReference@62a87d43
+2025-03-23T22:11:02.662-03:00 DEBUG 8160 --- [Compra_jogos] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_calendar -> org.hibernate.type.BasicTypeReference@6098d6fe
+2025-03-23T22:11:02.662-03:00 DEBUG 8160 --- [Compra_jogos] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_calendar_date -> org.hibernate.type.BasicTypeReference@7b46f90a
+2025-03-23T22:11:02.662-03:00 DEBUG 8160 --- [Compra_jogos] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_calendar_time -> org.hibernate.type.BasicTypeReference@3d7b870f
+2025-03-23T22:11:02.662-03:00 DEBUG 8160 --- [Compra_jogos] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_binary -> org.hibernate.type.BasicTypeReference@1c98b786
+2025-03-23T22:11:02.668-03:00 DEBUG 8160 --- [Compra_jogos] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_serializable -> org.hibernate.type.BasicTypeReference@3a91bdcd
+2025-03-23T22:11:03.012-03:00  INFO 8160 --- [Compra_jogos] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-03-23T22:11:03.092-03:00 DEBUG 8160 --- [Compra_jogos] [restartedMain] o.h.t.d.jdbc.spi.JdbcTypeRegistry        : addDescriptor(NCharTypeDescriptor) replaced previous registration(CharTypeDescriptor)
+2025-03-23T22:11:03.093-03:00 DEBUG 8160 --- [Compra_jogos] [restartedMain] o.h.t.d.jdbc.spi.JdbcTypeRegistry        : addDescriptor(NVarcharTypeDescriptor) replaced previous registration(VarcharTypeDescriptor)
+2025-03-23T22:11:03.093-03:00 DEBUG 8160 --- [Compra_jogos] [restartedMain] o.h.t.d.jdbc.spi.JdbcTypeRegistry        : addDescriptor(LongNVarcharTypeDescriptor) replaced previous registration(LongVarcharTypeDescriptor)
+2025-03-23T22:11:03.095-03:00 DEBUG 8160 --- [Compra_jogos] [restartedMain] o.h.t.d.jdbc.spi.JdbcTypeRegistry        : addDescriptor(NClobTypeDescriptor(DEFAULT)) replaced previous registration(ClobTypeDescriptor(DEFAULT))
+2025-03-23T22:11:03.095-03:00 DEBUG 8160 --- [Compra_jogos] [restartedMain] o.h.t.d.jdbc.spi.JdbcTypeRegistry        : addDescriptor(2005, ClobTypeDescriptor(STREAM_BINDING)) replaced previous registration(ClobTypeDescriptor(DEFAULT))
+2025-03-23T22:11:03.097-03:00 DEBUG 8160 --- [Compra_jogos] [restartedMain] o.h.t.d.jdbc.spi.JdbcTypeRegistry        : addDescriptor(TimestampUtcDescriptor) replaced previous registration(TimestampUtcDescriptor)
+2025-03-23T22:11:03.103-03:00 DEBUG 8160 --- [Compra_jogos] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration org.hibernate.type.DurationType -> basicType@1(java.time.Duration,3015)
+2025-03-23T22:11:03.103-03:00 DEBUG 8160 --- [Compra_jogos] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration Duration -> basicType@1(java.time.Duration,3015)
+2025-03-23T22:11:03.104-03:00 DEBUG 8160 --- [Compra_jogos] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.Duration -> basicType@1(java.time.Duration,3015)
+2025-03-23T22:11:03.107-03:00 DEBUG 8160 --- [Compra_jogos] [restartedMain] o.h.type.spi.TypeConfiguration$Scope     : Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@dce58b5] to MetadataBuildingContext [org.hibernate.boot.internal.MetadataBuildingContextRootImpl@44527333]
+2025-03-23T22:11:04.249-03:00  INFO 8160 --- [Compra_jogos] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-03-23T22:11:04.250-03:00 DEBUG 8160 --- [Compra_jogos] [restartedMain] o.h.type.spi.TypeConfiguration$Scope     : Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@dce58b5] to SessionFactoryImplementor [org.hibernate.internal.SessionFactoryImpl@6855005]
+2025-03-23T22:11:04.264-03:00 DEBUG 8160 --- [Compra_jogos] [restartedMain] org.hibernate.SQL                        : 
+    drop table if exists diretor cascade 
+2025-03-23T22:11:04.267-03:00 DEBUG 8160 --- [Compra_jogos] [restartedMain] org.hibernate.SQL                        : 
+    drop table if exists jogo cascade 
+2025-03-23T22:11:04.267-03:00 DEBUG 8160 --- [Compra_jogos] [restartedMain] org.hibernate.SQL                        : 
+    drop table if exists perfis cascade 
+2025-03-23T22:11:04.268-03:00 DEBUG 8160 --- [Compra_jogos] [restartedMain] org.hibernate.SQL                        : 
+    drop table if exists pessoa cascade 
+2025-03-23T22:11:04.268-03:00 DEBUG 8160 --- [Compra_jogos] [restartedMain] org.hibernate.SQL                        : 
+    drop table if exists publicadora cascade 
+2025-03-23T22:11:04.268-03:00 DEBUG 8160 --- [Compra_jogos] [restartedMain] org.hibernate.SQL                        : 
+    drop table if exists venda cascade 
+2025-03-23T22:11:04.268-03:00 DEBUG 8160 --- [Compra_jogos] [restartedMain] org.hibernate.SQL                        : 
+    drop sequence if exists seq_diretor
+2025-03-23T22:11:04.269-03:00 DEBUG 8160 --- [Compra_jogos] [restartedMain] org.hibernate.SQL                        : 
+    drop sequence if exists seq_jogo
+2025-03-23T22:11:04.269-03:00 DEBUG 8160 --- [Compra_jogos] [restartedMain] org.hibernate.SQL                        : 
+    drop sequence if exists seq_pessoa
+2025-03-23T22:11:04.269-03:00 DEBUG 8160 --- [Compra_jogos] [restartedMain] org.hibernate.SQL                        : 
+    drop sequence if exists seq_publicadora
+2025-03-23T22:11:04.273-03:00 DEBUG 8160 --- [Compra_jogos] [restartedMain] org.hibernate.SQL                        : 
+    create sequence seq_diretor start with 1 increment by 50
+2025-03-23T22:11:04.275-03:00 DEBUG 8160 --- [Compra_jogos] [restartedMain] org.hibernate.SQL                        : 
+    create sequence seq_jogo start with 1 increment by 50
+2025-03-23T22:11:04.276-03:00 DEBUG 8160 --- [Compra_jogos] [restartedMain] org.hibernate.SQL                        : 
+    create sequence seq_pessoa start with 1 increment by 50
+2025-03-23T22:11:04.276-03:00 DEBUG 8160 --- [Compra_jogos] [restartedMain] org.hibernate.SQL                        : 
+    create sequence seq_publicadora start with 1 increment by 50
+2025-03-23T22:11:04.279-03:00 DEBUG 8160 --- [Compra_jogos] [restartedMain] org.hibernate.SQL                        : 
+    create table diretor (
+        id integer not null,
+        cpf varchar(255) not null unique,
+        nome varchar(255) not null,
+        primary key (id)
+    )
+2025-03-23T22:11:04.285-03:00 DEBUG 8160 --- [Compra_jogos] [restartedMain] org.hibernate.SQL                        : 
+    create table jogo (
+        completude tinyint check (completude between 0 and 4),
+        data_compra date,
+        iddiretor integer,
+        idpublicadora integer,
+        status tinyint check (status between 0 and 2),
+        valor_compra numeric(18,3) not null,
+        id_jogo bigint not null,
+        codigo_barra varchar(255) not null unique,
+        titulo varchar(255) not null,
+        primary key (id_jogo)
+    )
+2025-03-23T22:11:04.289-03:00 DEBUG 8160 --- [Compra_jogos] [restartedMain] org.hibernate.SQL                        : 
+    create table perfis (
+        tipo_pessoa integer,
+        pessoa_id bigint not null
+    )
+2025-03-23T22:11:04.290-03:00 DEBUG 8160 --- [Compra_jogos] [restartedMain] org.hibernate.SQL                        : 
+    create table pessoa (
+        create_at date,
+        id bigint not null,
+        dtype varchar(31) not null,
+        cpf varchar(255) unique,
+        email varchar(255) unique,
+        primeiro_nome varchar(255),
+        segundo_nome varchar(255),
+        senha varchar(255),
+        primary key (id)
+    )
+2025-03-23T22:11:04.292-03:00 DEBUG 8160 --- [Compra_jogos] [restartedMain] org.hibernate.SQL                        : 
+    create table publicadora (
+        id integer not null,
+        cnpj varchar(255) not null unique,
+        razao_social varchar(255) not null,
+        primary key (id)
+    )
+2025-03-23T22:11:04.293-03:00 DEBUG 8160 --- [Compra_jogos] [restartedMain] org.hibernate.SQL                        : 
+    create table venda (
+        dia_venda date,
+        edicao tinyint check (edicao between 0 and 2),
+        forma_pagameno tinyint check (forma_pagameno between 0 and 1),
+        id_jogador bigint,
+        id_vendedor bigint,
+        id uuid not null,
+        descricao varchar(255),
+        nomejogo varchar(255),
+        primary key (id)
+    )
+2025-03-23T22:11:04.295-03:00 DEBUG 8160 --- [Compra_jogos] [restartedMain] org.hibernate.SQL                        : 
+    alter table if exists jogo 
+       add constraint FK810j37puo44449u8nxqx1rwe0 
+       foreign key (iddiretor) 
+       references diretor
+2025-03-23T22:11:04.304-03:00 DEBUG 8160 --- [Compra_jogos] [restartedMain] org.hibernate.SQL                        : 
+    alter table if exists jogo 
+       add constraint FKhsbq1c6ih317pg5m4dhvdeyt2 
+       foreign key (idpublicadora) 
+       references publicadora
+2025-03-23T22:11:04.306-03:00 DEBUG 8160 --- [Compra_jogos] [restartedMain] org.hibernate.SQL                        : 
+    alter table if exists perfis 
+       add constraint FKlnesgnyiynjyqx8ks8cyhv6il 
+       foreign key (pessoa_id) 
+       references pessoa
+2025-03-23T22:11:04.307-03:00 DEBUG 8160 --- [Compra_jogos] [restartedMain] org.hibernate.SQL                        : 
+    alter table if exists venda 
+       add constraint FKhfgp1vl5jphql5iiak75st2vw 
+       foreign key (id_jogador) 
+       references pessoa
+2025-03-23T22:11:04.309-03:00 DEBUG 8160 --- [Compra_jogos] [restartedMain] org.hibernate.SQL                        : 
+    alter table if exists venda 
+       add constraint FKai3wblhavfh2gm9w5c4329spp 
+       foreign key (id_vendedor) 
+       references pessoa
+2025-03-23T22:11:04.312-03:00 TRACE 8160 --- [Compra_jogos] [restartedMain] o.h.type.spi.TypeConfiguration$Scope     : Handling #sessionFactoryCreated from [org.hibernate.internal.SessionFactoryImpl@6855005] for TypeConfiguration
+2025-03-23T22:11:04.313-03:00  INFO 8160 --- [Compra_jogos] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-03-23T22:11:04.835-03:00 DEBUG 8160 --- [Compra_jogos] [restartedMain] org.hibernate.SQL                        : 
+    select
+        next value for seq_diretor
+2025-03-23T22:11:04.917-03:00 DEBUG 8160 --- [Compra_jogos] [restartedMain] org.hibernate.SQL                        : 
+    insert 
+    into
+        diretor
+        (cpf, nome, id) 
+    values
+        (?, ?, ?)
+2025-03-23T22:11:04.927-03:00 DEBUG 8160 --- [Compra_jogos] [restartedMain] org.hibernate.SQL                        : 
+    select
+        next value for seq_diretor
+2025-03-23T22:11:04.929-03:00 DEBUG 8160 --- [Compra_jogos] [restartedMain] org.hibernate.SQL                        : 
+    insert 
+    into
+        diretor
+        (cpf, nome, id) 
+    values
+        (?, ?, ?)
+2025-03-23T22:11:04.930-03:00 DEBUG 8160 --- [Compra_jogos] [restartedMain] org.hibernate.SQL                        : 
+    insert 
+    into
+        diretor
+        (cpf, nome, id) 
+    values
+        (?, ?, ?)
+2025-03-23T22:11:04.932-03:00 DEBUG 8160 --- [Compra_jogos] [restartedMain] org.hibernate.SQL                        : 
+    select
+        next value for seq_publicadora
+2025-03-23T22:11:04.934-03:00 DEBUG 8160 --- [Compra_jogos] [restartedMain] org.hibernate.SQL                        : 
+    insert 
+    into
+        publicadora
+        (cnpj, razao_social, id) 
+    values
+        (?, ?, ?)
+2025-03-23T22:11:04.935-03:00 DEBUG 8160 --- [Compra_jogos] [restartedMain] org.hibernate.SQL                        : 
+    select
+        next value for seq_publicadora
+2025-03-23T22:11:04.936-03:00 DEBUG 8160 --- [Compra_jogos] [restartedMain] org.hibernate.SQL                        : 
+    insert 
+    into
+        publicadora
+        (cnpj, razao_social, id) 
+    values
+        (?, ?, ?)
+2025-03-23T22:11:04.939-03:00 DEBUG 8160 --- [Compra_jogos] [restartedMain] org.hibernate.SQL                        : 
+    select
+        next value for seq_jogo
+2025-03-23T22:11:04.942-03:00 DEBUG 8160 --- [Compra_jogos] [restartedMain] org.hibernate.SQL                        : 
+    insert 
+    into
+        jogo
+        (codigo_barra, completude, data_compra, iddiretor, idpublicadora, status, titulo, valor_compra, id_jogo) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?)
+2025-03-23T22:11:04.944-03:00 DEBUG 8160 --- [Compra_jogos] [restartedMain] org.hibernate.SQL                        : 
+    select
+        next value for seq_jogo
+2025-03-23T22:11:04.945-03:00 DEBUG 8160 --- [Compra_jogos] [restartedMain] org.hibernate.SQL                        : 
+    insert 
+    into
+        jogo
+        (codigo_barra, completude, data_compra, iddiretor, idpublicadora, status, titulo, valor_compra, id_jogo) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?)
+2025-03-23T22:11:04.947-03:00 DEBUG 8160 --- [Compra_jogos] [restartedMain] org.hibernate.SQL                        : 
+    insert 
+    into
+        jogo
+        (codigo_barra, completude, data_compra, iddiretor, idpublicadora, status, titulo, valor_compra, id_jogo) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?)
+2025-03-23T22:11:04.949-03:00 DEBUG 8160 --- [Compra_jogos] [restartedMain] org.hibernate.SQL                        : 
+    select
+        next value for seq_pessoa
+2025-03-23T22:11:04.952-03:00 DEBUG 8160 --- [Compra_jogos] [restartedMain] org.hibernate.SQL                        : 
+    insert 
+    into
+        pessoa
+        (cpf, create_at, email, primeiro_nome, segundo_nome, senha, dtype, id) 
+    values
+        (?, ?, ?, ?, ?, ?, 'Jogador', ?)
+2025-03-23T22:11:04.954-03:00 DEBUG 8160 --- [Compra_jogos] [restartedMain] org.hibernate.SQL                        : 
+    insert 
+    into
+        perfis
+        (pessoa_id, tipo_pessoa) 
+    values
+        (?, ?)
+2025-03-23T22:11:04.955-03:00 DEBUG 8160 --- [Compra_jogos] [restartedMain] org.hibernate.SQL                        : 
+    select
+        next value for seq_pessoa
+2025-03-23T22:11:04.956-03:00 DEBUG 8160 --- [Compra_jogos] [restartedMain] org.hibernate.SQL                        : 
+    insert 
+    into
+        pessoa
+        (cpf, create_at, email, primeiro_nome, segundo_nome, senha, dtype, id) 
+    values
+        (?, ?, ?, ?, ?, ?, 'Jogador', ?)
+2025-03-23T22:11:04.962-03:00 DEBUG 8160 --- [Compra_jogos] [restartedMain] org.hibernate.SQL                        : 
+    insert 
+    into
+        perfis
+        (pessoa_id, tipo_pessoa) 
+    values
+        (?, ?)
+2025-03-23T22:11:04.964-03:00 DEBUG 8160 --- [Compra_jogos] [restartedMain] org.hibernate.SQL                        : 
+    insert 
+    into
+        pessoa
+        (cpf, create_at, email, primeiro_nome, segundo_nome, senha, dtype, id) 
+    values
+        (?, ?, ?, ?, ?, ?, 'Vendedor', ?)
+2025-03-23T22:11:04.965-03:00 DEBUG 8160 --- [Compra_jogos] [restartedMain] org.hibernate.SQL                        : 
+    insert 
+    into
+        perfis
+        (pessoa_id, tipo_pessoa) 
+    values
+        (?, ?)
+2025-03-23T22:11:04.965-03:00 DEBUG 8160 --- [Compra_jogos] [restartedMain] org.hibernate.SQL                        : 
+    insert 
+    into
+        perfis
+        (pessoa_id, tipo_pessoa) 
+    values
+        (?, ?)
+2025-03-23T22:11:04.967-03:00 DEBUG 8160 --- [Compra_jogos] [restartedMain] org.hibernate.SQL                        : 
+    insert 
+    into
+        venda
+        (descricao, dia_venda, edicao, forma_pagameno, id_jogador, nomejogo, id_vendedor, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?)
+2025-03-23T22:11:05.079-03:00  WARN 8160 --- [Compra_jogos] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-03-23T22:11:05.544-03:00  INFO 8160 --- [Compra_jogos] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-03-23T22:11:05.591-03:00  INFO 8160 --- [Compra_jogos] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-03-23T22:11:05.602-03:00  INFO 8160 --- [Compra_jogos] [restartedMain] c.c.Compra_jogos.CompraJogosApplication  : Started CompraJogosApplication in 6.32 seconds (process running for 6.9)
+2025-03-23T22:15:16.059-03:00  INFO 8160 --- [Compra_jogos] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-03-23T22:15:16.061-03:00 DEBUG 8160 --- [Compra_jogos] [SpringApplicationShutdownHook] org.hibernate.SQL                        : 
+    drop table if exists diretor cascade 
+2025-03-23T22:15:16.063-03:00 DEBUG 8160 --- [Compra_jogos] [SpringApplicationShutdownHook] org.hibernate.SQL                        : 
+    drop table if exists jogo cascade 
+2025-03-23T22:15:16.064-03:00 DEBUG 8160 --- [Compra_jogos] [SpringApplicationShutdownHook] org.hibernate.SQL                        : 
+    drop table if exists perfis cascade 
+2025-03-23T22:15:16.065-03:00 DEBUG 8160 --- [Compra_jogos] [SpringApplicationShutdownHook] org.hibernate.SQL                        : 
+    drop table if exists pessoa cascade 
+2025-03-23T22:15:16.065-03:00 DEBUG 8160 --- [Compra_jogos] [SpringApplicationShutdownHook] org.hibernate.SQL                        : 
+    drop table if exists publicadora cascade 
+2025-03-23T22:15:16.066-03:00 DEBUG 8160 --- [Compra_jogos] [SpringApplicationShutdownHook] org.hibernate.SQL                        : 
+    drop table if exists venda cascade 
+2025-03-23T22:15:16.067-03:00 DEBUG 8160 --- [Compra_jogos] [SpringApplicationShutdownHook] org.hibernate.SQL                        : 
+    drop sequence if exists seq_diretor
+2025-03-23T22:15:16.067-03:00 DEBUG 8160 --- [Compra_jogos] [SpringApplicationShutdownHook] org.hibernate.SQL                        : 
+    drop sequence if exists seq_jogo
+2025-03-23T22:15:16.067-03:00 DEBUG 8160 --- [Compra_jogos] [SpringApplicationShutdownHook] org.hibernate.SQL                        : 
+    drop sequence if exists seq_pessoa
+2025-03-23T22:15:16.067-03:00 DEBUG 8160 --- [Compra_jogos] [SpringApplicationShutdownHook] org.hibernate.SQL                        : 
+    drop sequence if exists seq_publicadora
+2025-03-23T22:15:16.069-03:00 TRACE 8160 --- [Compra_jogos] [SpringApplicationShutdownHook] o.h.type.spi.TypeConfiguration$Scope     : Handling #sessionFactoryClosed from [org.hibernate.internal.SessionFactoryImpl@6855005] for TypeConfiguration
+2025-03-23T22:15:16.069-03:00 DEBUG 8160 --- [Compra_jogos] [SpringApplicationShutdownHook] o.h.type.spi.TypeConfiguration$Scope     : Un-scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration$Scope@35c47376] from SessionFactory [org.hibernate.internal.SessionFactoryImpl@6855005]
+2025-03-23T22:15:16.074-03:00  WARN 8160 --- [Compra_jogos] [SpringApplicationShutdownHook] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-224]
+2025-03-23T22:15:16.075-03:00  INFO 8160 --- [Compra_jogos] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-03-23T22:15:16.077-03:00  INFO 8160 --- [Compra_jogos] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
