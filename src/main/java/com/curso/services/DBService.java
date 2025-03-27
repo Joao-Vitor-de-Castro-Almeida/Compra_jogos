@@ -60,17 +60,17 @@ public class DBService {
         jogoRepo.save(jogo02);
         jogoRepo.save(jogo03);
 
-        Jogador jogador01 = new Jogador(null,"jonas","Matheus","44457-20","jonasMA@email.com","melo85");
-        Jogador jogador02 = new Jogador(null,"Tucas","Homes","85226-45","homes@Gmail.com","lelo85");
+        Jogador jogador01 = new Jogador(null,"jonas","Matheus","123.456.789-09","jonasMA@email.com","melo85");
+        Jogador jogador02 = new Jogador(null,"Tucas","Homes","321.789.564-95","homes@Gmail.com","lelo85");
 
         jogadorRepo.save(jogador01);
         jogadorRepo.save(jogador02);
 
-        Vendedor vendedor01 = new Vendedor(null,"Felipe Gomes","Santos","56842-80","negociante@Gmail.com","fulu40");
+        Vendedor vendedor01 = new Vendedor(null,"Felipe Gomes","Santos","159.658.752-41","negociante@Gmail.com","fulu40");
 
         vendedorRepo.save(vendedor01);
 
-        Venda venda01 = new Venda(null,"The dragons","luta em terceira pessoa", Edicao.JOGADOR, FormaPagameno.DEBITO,
+        Venda venda01 = new Venda(null,"The dragons","luta em terceira pessoa", Edicao.ULTIMATE, FormaPagameno.DEBITO,
                 vendedor01,jogador01);
 
         vendaRepo.save(venda01);

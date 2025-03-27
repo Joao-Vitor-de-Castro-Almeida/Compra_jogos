@@ -3,8 +3,8 @@ package com.curso.domains.enums;
 public enum Edicao {
 
 
-    ADMIN(0,"ROLE_ADMIN"),VENDEDOR(1,"ROLE_VENDEDOR"),
-    JOGADOR(2,"ROLE_VENDEDOR");
+    PADRAO(0,"ROLE_PADRAO"), DELUXE(1,"ROLE_DELUXE"),
+    ULTIMATE(2,"ROLE_ULTIMATE");
 
     private Integer id;
     private String edicao;
