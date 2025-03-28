@@ -33,7 +33,11 @@ public class DBService {
     @Autowired
     private VendaRepository vendaRepo;
 
+    @Autowired
+    private VeiculoRepository veiculoRepo;
+
     public void initDB() {
+
 
         Diretor diretor01 = new Diretor(null, "Julio Menakos", "23.453.535-20");
         Diretor diretor02 = new Diretor(null, "Menezes Calolo", "84.586.965-10");
@@ -74,6 +78,12 @@ public class DBService {
                 vendedor01,jogador01);
 
         vendaRepo.save(venda01);
+
+        Veiculo veiculo01 = new Veiculo(null, "rodivaler 45",  LocalDate.now(),45600,"Antonia","199.455.752-74");
+
+        veiculoRepo.save(veiculo01);
+
+
 
     }
 }
