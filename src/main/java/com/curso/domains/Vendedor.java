@@ -12,6 +12,7 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 @Entity
+@Table(name = "vendedor")
 public class Vendedor extends  Pessoa{
 
     @JsonIgnore
@@ -20,6 +21,7 @@ public class Vendedor extends  Pessoa{
 
     public Vendedor(Long id, String primeiroNome, String segundoNome, String CPF, String email, String senha) {
         super(id,primeiroNome,segundoNome,CPF,email,senha);
+        addTipoPessoa(TipoPessoa.JOGADOR);
         addTipoPessoa(TipoPessoa.VENDEDOR);
     }
 
@@ -33,11 +35,13 @@ public class Vendedor extends  Pessoa{
         this.createAt = obj.getCreatedAt();
         this.tipoPessoa = obj.getTipoPessoa().stream()
                 .map(x -> x.getId()).collect(Collectors.toSet());
+        addTipoPessoa(TipoPessoa.JOGADOR);
         addTipoPessoa(TipoPessoa.VENDEDOR);
     }
 
     public Vendedor(){
         super();
+        addTipoPessoa(TipoPessoa.JOGADOR);
         addTipoPessoa(TipoPessoa.VENDEDOR);
     }
 

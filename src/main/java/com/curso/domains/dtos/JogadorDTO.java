@@ -53,7 +53,7 @@ public class JogadorDTO {
         this.email = obj.getEmail();
         this.senha = obj.getSenha();
         this.createdAt = obj.getCreateAt();
-        this.tipoPessoa.stream().map(TipoPessoa::toEnum).collect(Collectors.toSet());
+        this.tipoPessoa = obj.getTipoPessoa().stream().map(TipoPessoa::getId).collect(Collectors.toSet());
     }
 
     public Long getId() {

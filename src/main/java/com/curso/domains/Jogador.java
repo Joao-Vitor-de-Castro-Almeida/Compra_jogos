@@ -12,6 +12,7 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 @Entity
+@Table(name = "jogador")
 public class Jogador extends Pessoa{
 
     @JsonIgnore
