@@ -1,4 +1,4 @@
-package com.curso.resoucers.exceptions;
+package com.curso.resources.exceptions;
 
 import com.curso.services.exceptions.DataIntegrityViolationException;
 import com.curso.services.exceptions.ObjectNotFoundException;

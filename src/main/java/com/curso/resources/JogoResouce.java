@@ -1,4 +1,4 @@
-package com.curso.resoucers;
+package com.curso.resources;
 
 import com.curso.domains.Jogo;
 import com.curso.domains.dtos.JogoDTO;

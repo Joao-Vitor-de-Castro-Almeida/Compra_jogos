@@ -1,4 +1,4 @@
-package com.curso.resoucers;
+package com.curso.resources;
 
 import com.curso.domains.Diretor;
 import com.curso.domains.dtos.DiretorDTO;

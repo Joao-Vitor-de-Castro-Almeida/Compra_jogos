@@ -1,4 +1,4 @@
-package com.curso.resoucers;
+package com.curso.resources;
 
 import com.curso.domains.Publicadora;
 import com.curso.domains.dtos.PublicadoraDTO;

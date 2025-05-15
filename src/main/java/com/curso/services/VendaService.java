@@ -4,7 +4,6 @@ import com.curso.domains.Jogador;
 import com.curso.domains.Venda;
 import com.curso.domains.Vendedor;
 import com.curso.domains.dtos.VendaDTO;
-import com.curso.domains.dtos.VendedorDTO;
 import com.curso.domains.enums.Edicao;
 import com.curso.domains.enums.FormaPagameno;
 import com.curso.repositories.VendaRepository;
@@ -13,7 +12,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
-import java.util.Objects;
 import java.util.Optional;
 import java.util.UUID;
 import java.util.stream.Collectors;

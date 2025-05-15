@@ -1,8 +1,7 @@
-package com.curso.resoucers;
+package com.curso.resources;
 
 import com.curso.domains.Jogador;
 import com.curso.domains.dtos.JogadorDTO;
-import com.curso.domains.dtos.JogoDTO;
 import com.curso.services.JogadorService;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;

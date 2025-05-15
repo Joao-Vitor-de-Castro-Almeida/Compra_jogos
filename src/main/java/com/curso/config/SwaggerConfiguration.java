@@ -13,7 +13,7 @@ public class SwaggerConfiguration {
     @Bean
     public GroupedOpenApi publicApi(){
         return GroupedOpenApi.builder()
-                .group("compras_jogosOs2025")
+                .group("Compras_jogosOs2025")
                 .pathsToMatch("/**")
                 .packagesToScan("com.curso.resources")
                 .build();
