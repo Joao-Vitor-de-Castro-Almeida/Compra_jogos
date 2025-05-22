@@ -23,7 +23,8 @@ public class VeiculoResouce {
     private VeiculoService veiculoService;
 
     @GetMapping
-    @Operation(summary = "Listar todos os veiculos")
+    @Operation(summary = "Listar todos os veiculos",
+            description = "Retorna uma lista com todos os Veiculos cadastrados")
     public ResponseEntity<List<VeiculoDTO>> findAll(){
         return ResponseEntity.ok().body(veiculoService.findAll());
     }

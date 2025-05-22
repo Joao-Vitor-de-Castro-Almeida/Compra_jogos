@@ -23,7 +23,8 @@ public class JogoResouce {
     private JogoService jogoService;
 
     @GetMapping
-    @Operation(summary = "Listar todos os Jogos")
+    @Operation(summary = "Listar todos os Jogos",
+            description = "Retorna uma lista com todos os Jogos cadastrados")
     public ResponseEntity<List<JogoDTO>> findAll(){
         return ResponseEntity.ok().body(jogoService.findAll());
     }

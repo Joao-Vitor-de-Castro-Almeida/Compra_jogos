@@ -23,7 +23,8 @@ public class DiretorResouce {
     private DiretorService diretorService;
 
     @GetMapping
-    @Operation(summary = "Listar todos os Diretores")
+    @Operation(summary = "Listar todos os Diretores",
+            description = "Retorna uma lista com todos os Diretores cadastrados")
     public ResponseEntity<List<DiretorDTO>> findAll(){
         return ResponseEntity.ok().body(diretorService.findAll());
     }

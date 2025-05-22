@@ -23,7 +23,8 @@ public class PublicadoraResouce {
     private PublicadoraService publicadoraService;
 
     @GetMapping
-    @Operation(summary = "Listar todos as publicadores")
+    @Operation(summary = "Listar todos as publicadores",
+            description = "Retorna uma lista com todas as publicadoras cadastrados")
     public ResponseEntity<List<PublicadoraDTO>> findAll(){
         return ResponseEntity.ok().body(publicadoraService.findAll());
     }

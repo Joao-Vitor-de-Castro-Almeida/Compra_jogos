@@ -32,7 +32,8 @@ public class VendaResouce {
     }
 
     @GetMapping
-    @Operation(summary = "Listar todos as vendas")
+    @Operation(summary = "Listar todos as vendas",
+            description = "Retorna uma lista com todas as Vendas cadastrados")
     public ResponseEntity<List<VendaDTO>> findAll(){
         return ResponseEntity.ok().body(vendaService.findAll());
     }

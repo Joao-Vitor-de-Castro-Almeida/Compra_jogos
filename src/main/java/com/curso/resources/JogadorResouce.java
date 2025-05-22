@@ -23,7 +23,8 @@ public class JogadorResouce {
     private JogadorService jogadorService;
 
     @GetMapping
-    @Operation(summary = "Listar todos os Jogadores")
+    @Operation(summary = "Listar todos os Jogadores",
+            description = "Retorna uma lista com todos os Jogadores cadastrados")
     public ResponseEntity<List<JogadorDTO>> findAll(){
         return ResponseEntity.ok().body(jogadorService.findAll());
     }

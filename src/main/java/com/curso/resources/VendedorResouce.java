@@ -23,7 +23,8 @@ public class VendedorResouce {
     private VendedorService vendedorService;
 
     @GetMapping
-    @Operation(summary = "Listar todos os vendedores")
+    @Operation(summary = "Listar todos os vendedores",
+            description = "Retorna uma lista com todos os Vendedores cadastrados")
     public ResponseEntity<List<VendedorDTO>> findAll(){
         return ResponseEntity.ok().body(vendedorService.findAll());
     }
