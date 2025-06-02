@@ -6,6 +6,7 @@ import com.curso.repositories.JogadorRepository;
 import com.curso.services.exceptions.DataIntegrityViolationException;
 import com.curso.services.exceptions.ObjectNotFoundException;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -17,6 +18,9 @@ public class JogadorService {
 
     @Autowired
     private JogadorRepository jogadorRepo;
+
+    @Autowired
+    private PasswordEncoder encoder;
 
     public List<JogadorDTO> findAll(){
         return jogadorRepo.findAll().stream()
@@ -40,6 +44,7 @@ public class JogadorService {
 
     public Jogador create(JogadorDTO objDto){
         objDto.setId(null);
+        objDto.setSenha(encoder.encode(objDto.getSenha()));
         ValidaPorCPFeEmail(objDto);
         Jogador newObj = new Jogador(objDto);
         return jogadorRepo.save(newObj);
